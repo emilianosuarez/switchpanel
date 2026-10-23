@@ -54,6 +54,8 @@ In the panel: click a project to rename it, right-click for colors, snooze a ses
 
 ## Summaries
 
+<p align="center"><img src="docs/summary.png" width="321" alt="An expanded session: what was done, what Claude is waiting for, and the next steps"></p>
+
 Off by default. When on, after each turn the hook runs `claude -p --model haiku` **with the same account as the session and without `ANTHROPIC_API_KEY`**, so it uses your plan's quota, not the API. Turn them on with `./install.sh --summaries on` or in `~/.switchpanel/config.json`:
 
 ```json
