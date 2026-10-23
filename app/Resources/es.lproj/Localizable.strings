@@ -1,0 +1,57 @@
+/* Barra de menú */
+"Show / hide panel" = "Mostrar / ocultar panel";
+"Search sessions (⌥Space)" = "Buscar sesión (⌥Espacio)";
+"Always on top" = "Siempre adelante";
+"Open at login" = "Abrir al iniciar sesión";
+"Open config.json" = "Abrir config.json";
+"Quit" = "Salir";
+
+/* Panel */
+"No open Claude Code sessions" = "No hay sesiones de Claude Code abiertas";
+"No results" = "Sin resultados";
+"Search project or task  (⌥Space)" = "Buscar proyecto o tarea  (⌥Espacio)";
+"What each icon means" = "Qué significa cada ícono";
+"NEEDS YOU (%lld)" = "TE NECESITAN (%lld)";
+"Click: rename project · Right-click: change color" = "Clic: renombrar proyecto · Clic derecho: cambiar color";
+"Rename task" = "Renombrar tarea";
+"Show summary and next steps" = "Ver resumen y próximos pasos";
+"⏳ Waiting for: " = "⏳ Espera: ";
+"Next steps" = "Próximos pasos";
+"Last request: " = "Último pedido: ";
+"(untitled)" = "(sin título)";
+"now" = "ahora";
+
+/* Referencia */
+"Legend" = "Referencia";
+"Waiting for you: asked for a permission or left a question/decision" = "Te espera: pidió un permiso o te dejó una pregunta/decisión";
+"Done: your turn, but nothing specific is pending" = "Terminó: te toca, pero no espera nada puntual";
+"Working" = "Trabajando";
+"Idle: you haven't written anything yet" = "Sin actividad: todavía no le escribiste nada";
+"Needs a permission" = "Necesita un permiso";
+"Project color (right-click to change it)" = "Color del proyecto (clic derecho para cambiarlo)";
+"Snoozed: hidden from \"Needs you\" for a while" = "Pospuesta: no aparece en \"Te necesitan\" por un rato";
+"Click a row: go to its terminal · ⌥Space: search" = "Clic en una fila: ir a la terminal · ⌥Espacio: buscar";
+
+/* Menú contextual */
+"Go to terminal" = "Ir a la terminal";
+"Rename task…" = "Renombrar tarea…";
+"Unsnooze" = "Quitar posposición";
+"Snooze 30 min" = "Posponer 30 min";
+"Snooze 2 h" = "Posponer 2 h";
+"Color of %@" = "Color de %@";
+"Rename project…" = "Renombrar proyecto…";
+
+/* Colores */
+"Blue" = "Azul";
+"Green" = "Verde";
+"Orange" = "Naranja";
+"Purple" = "Violeta";
+"Pink" = "Rosa";
+"Teal" = "Turquesa";
+"Yellow" = "Amarillo";
+"Red" = "Rojo";
+"Gray" = "Gris";
+
+/* Idioma */
+"Language" = "Idioma";
+"Automatic (system)" = "Automático (sistema)";
