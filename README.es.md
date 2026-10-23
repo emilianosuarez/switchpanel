@@ -54,7 +54,7 @@ En el panel: clic en un proyecto para renombrarlo, clic derecho para el color, p
 
 ## Resúmenes
 
-<p align="center"><img src="docs/summary.png" width="321" alt="Una sesión expandida: qué se hizo, qué espera Claude y los próximos pasos"></p>
+<p align="center"><img src="docs/summary.png" width="318" alt="Una sesión expandida: qué se hizo, qué espera Claude y los próximos pasos"></p>
 
 Vienen apagados. Si los activás, al terminar cada turno el hook corre `claude -p --model haiku` **con la misma cuenta de la sesión y sin `ANTHROPIC_API_KEY`**, así que usa la cuota de tu plan y no la API. Se activan con `./install.sh --summaries on` o en `~/.switchpanel/config.json`:
 
