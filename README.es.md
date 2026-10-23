@@ -4,6 +4,8 @@
 
 Un tablero de sesiones para Claude Code: qué está haciendo cada terminal, en qué proyecto y cuenta, y cuáles te están esperando.
 
+<p align="center"><img src="docs/screenshot.png" width="325" alt="Switchpanel: sesiones agrupadas por cuenta y proyecto, con las que te esperan arriba"></p>
+
 - **Panel flotante + ícono en la barra de menú** (macOS) con todas las sesiones abiertas, agrupadas por cuenta → proyecto. Las que esperan un permiso o una decisión suben arriba ("Te necesitan"), la que más espera primero.
 - **Título de pestaña** con el color del proyecto y el estado: `🟠⏳ shop-api N+1 en GET…`. ⚙️ trabajando, ⏳ te espera, ✅ terminó (te toca).
 - **Status line** en Claude Code con la cuenta, el proyecto y qué espera Claude de vos.
@@ -97,7 +99,7 @@ El estado de cada sesión está en `~/.switchpanel/sessions/` y los errores en `
 
 Escribe el título de la pestaña directo en la tty de la sesión (OSC 0) y define `CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1` para que Claude Code no lo pise.
 
-La app (`app/`, SwiftUI) observa esa carpeta. Para recompilarla mientras desarrollás: `app/scripts/build-app.sh`.
+La app (`app/`, SwiftUI) observa esa carpeta. Para recompilarla mientras desarrollás: `app/scripts/build-app.sh`. Para capturas, `scripts/demo.py` la abre con sesiones inventadas.
 
 Los archivos de sesión tienen un formato chico y documentado ([docs/session-format.md](docs/session-format.md)), así que se pueden sumar otros agentes de código escribiendo un adaptador que los genere, sin cambiar la app.
 

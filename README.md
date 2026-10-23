@@ -4,6 +4,8 @@
 
 A session board for Claude Code: what each terminal is doing, in which project and account, and which ones are waiting for you.
 
+<p align="center"><img src="docs/screenshot.png" width="325" alt="Switchpanel: sessions grouped by account and project, with the ones waiting for you at the top"></p>
+
 - **Floating panel + menu bar icon** (macOS) listing every open session, grouped by account → project. Sessions waiting for a permission or a decision float to the top ("Needs you"), oldest first.
 - **Tab titles** that show the project color and state: `🟠⏳ shop-api fix N+1…`. ⚙️ working, ⏳ waiting for you, ✅ done (your turn).
 - **Status line** in Claude Code with the account, project and what Claude is waiting for.
@@ -97,7 +99,7 @@ Session state lives in `~/.switchpanel/sessions/`; errors go to `~/.switchpanel/
 
 It writes the tab title straight to the session's tty (OSC 0) and sets `CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1` so Claude Code doesn't overwrite it.
 
-The app (`app/`, SwiftUI) watches that folder. To rebuild it during development: `app/scripts/build-app.sh`.
+The app (`app/`, SwiftUI) watches that folder. To rebuild it during development: `app/scripts/build-app.sh`. For screenshots, `scripts/demo.py` opens it with made-up sessions.
 
 The session files are a small, documented format ([docs/session-format.md](docs/session-format.md)), so other coding agents can be supported by writing an adapter that produces them. The app doesn't need to change.
 
