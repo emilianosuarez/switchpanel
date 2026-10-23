@@ -285,7 +285,8 @@ struct SessionRow: View {
             if let text = session.summary?.text, !text.isEmpty {
                 Text(text)
             }
-            if let reason = session.waitingReason, !reason.isEmpty {
+            // En "Te necesitan" el motivo ya se ve debajo del título.
+            if !showReason, let reason = session.waitingReason, !reason.isEmpty {
                 Text("⏳ Waiting for: ").bold().foregroundColor(Palette.color("yellow")) + Text(reason)
             }
             if let steps = session.summary?.next_steps, !steps.isEmpty {
