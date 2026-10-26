@@ -144,9 +144,14 @@ struct BoardView: View {
                 .padding(.top, 4)
                 .padding(.leading, 4)
                 .contentShape(Rectangle())
-                .onTapGesture { ui.editing = .project(p.path) }
-                .hoverHint(String(localized: "Click: rename project · Right-click: change color"))
-                .contextMenu { ProjectMenu(path: p.path, project: p.project, store: store, ui: ui) }
+                .onTapGesture {
+                    if ui.editing != .project(p.path) { TerminalJumper.focus(tty: p.sessions.first?.tty) }
+                }
+                .hoverHint(String(localized: "Click: go to its terminal · Right-click: rename, color, new session"))
+                .contextMenu {
+                    ProjectMenu(path: p.path, project: p.project, configDir: p.sessions.first?.config_dir,
+                                store: store, ui: ui)
+                }
                 ForEach(p.sessions) { s in
                     SessionRow(session: s, store: store, ui: ui, showProject: false, showReason: false, expanded: $expanded)
                         .padding(.leading, 12)
@@ -319,7 +324,7 @@ struct SessionRow: View {
         }
         Divider()
         if let path = session.project {
-            ProjectMenu(path: path, project: project, store: store, ui: ui)
+            ProjectMenu(path: path, project: project, configDir: session.config_dir, store: store, ui: ui)
         }
     }
 }
@@ -327,10 +332,14 @@ struct SessionRow: View {
 struct ProjectMenu: View {
     let path: String
     let project: ProjectConfig
+    let configDir: String?
     let store: BoardStore
     let ui: PanelState
 
     var body: some View {
+        Button("New Claude session in \(project.name)") {
+            TerminalJumper.newSession(in: path, configDir: configDir)
+        }
         Menu("Color of \(project.name)") {
             ForEach(Palette.names, id: \.self) { name in
                 Button(Palette.displayName(name)) { store.updateProject(path, color: name) }

@@ -50,7 +50,7 @@ Typed in Claude Code. The hook intercepts them, so they don't reach the model or
 - `/label feature A`: labels the session (`/label` alone clears it).
 - `/project My API blue`: renames the project and/or changes its color. `/proyecto` works too. Colors: blue, green, orange, purple, pink, teal, yellow, red, gray (or their Spanish names).
 
-In the panel: click a project to rename it, right-click for colors, snooze a session, or rename a task.
+In the panel: click a project to jump to its terminal; right-click it to rename it, change its color, or open a new Claude session in that project with the same account (in a new Terminal window). Right-click a session to snooze it or rename the task.
 
 ## Summaries
 

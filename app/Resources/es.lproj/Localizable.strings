@@ -12,7 +12,7 @@
 "Search project or task  (⌥Space)" = "Buscar proyecto o tarea  (⌥Espacio)";
 "What each icon means" = "Qué significa cada ícono";
 "NEEDS YOU (%lld)" = "TE NECESITAN (%lld)";
-"Click: rename project · Right-click: change color" = "Clic: renombrar proyecto · Clic derecho: cambiar color";
+"Click: go to its terminal · Right-click: rename, color, new session" = "Clic: ir a su terminal · Clic derecho: renombrar, color, nueva sesión";
 "Rename task" = "Renombrar tarea";
 "Show summary and next steps" = "Ver resumen y próximos pasos";
 "⏳ Waiting for: " = "⏳ Espera: ";
@@ -38,6 +38,7 @@
 "Unsnooze" = "Quitar posposición";
 "Snooze 30 min" = "Posponer 30 min";
 "Snooze 2 h" = "Posponer 2 h";
+"New Claude session in %@" = "Nueva sesión de Claude en %@";
 "Color of %@" = "Color de %@";
 "Rename project…" = "Renombrar proyecto…";
 

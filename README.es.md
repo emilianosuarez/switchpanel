@@ -50,7 +50,7 @@ Se escriben en Claude Code. Los intercepta el hook, así que no llegan al modelo
 - `/label feature A`: etiqueta la sesión (`/label` sola la borra).
 - `/proyecto Mi API azul`: renombra el proyecto y/o le cambia el color. También anda `/project`. Colores: azul, verde, naranja, violeta, rosa, turquesa, amarillo, rojo, gris (o en inglés).
 
-En el panel: clic en un proyecto para renombrarlo, clic derecho para el color, posponer una sesión o renombrar una tarea.
+En el panel: clic en un proyecto para ir a su terminal; clic derecho para renombrarlo, cambiarle el color o abrir una sesión nueva de Claude en ese proyecto con la misma cuenta (en una ventana nueva de Terminal). Clic derecho en una sesión para posponerla o renombrar la tarea.
 
 ## Resúmenes
 

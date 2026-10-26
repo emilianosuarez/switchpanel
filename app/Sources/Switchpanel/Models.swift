@@ -26,6 +26,8 @@ struct Session: Codable, Identifiable, Hashable {
     /// Qué agente escribió la sesión ("claude-code"); las anteriores a este campo no lo tienen.
     var agent: String?
     var account: String?
+    /// Carpeta de config de la cuenta (CLAUDE_CONFIG_DIR o ~/.claude).
+    var config_dir: String?
     var project: String?
     var cwd: String?
     var tty: String?
